@@ -1,7 +1,7 @@
 name: GitHub Actions Demo
 on: [push]
 env: 
-  FOO: ${{ github.sha }} ${{ github.run_attempt }}
+  FOO: ${{ github.sha }}-${{ github.run_attempt }}
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
